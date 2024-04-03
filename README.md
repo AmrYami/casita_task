@@ -4,6 +4,7 @@ country controller path: /var/www/casita_task/app/Modules/users/Http/Controllers
 # for docker users
 
 copy .env.example to .env
+in .env.testing uncomment database config under for docker and comment database config under for server
 
 # Notes
 
