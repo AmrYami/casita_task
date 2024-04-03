@@ -14,7 +14,10 @@ Route::namespace(buildControllerNamespace('Users') . '\API')->group(function () 
     Route::group([
         'prefix' => 'api'], function ($router) {
 
-        Route::resource('countries', 'CountryController');
+        Route::resource('countries', 'CountryController', ['except' => 'index']);
+        Route::middleware(['auth:api'])->group(function () {
+            Route::get('countries', 'CountryController@index');
+        });
     });
 });
 

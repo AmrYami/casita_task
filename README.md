@@ -1,6 +1,7 @@
                         # BaseModule
 **********************************************************
-country controller path: /var/www/casita_task/app/Modules/users/Http/Controllers/API/CountryController.php
+CountryController path: /var/www/casita_task/app/Modules/users/Http/Controllers/API/CountryController.php
+routes/api path for countries: /var/www/casita_task/app/Modules/users/routes/api.php
 # for docker users
 
 copy .env.example to .env
@@ -52,14 +53,16 @@ localhost:8070 => for project
 change .env database config
 in .env.testing comment database config under for docker and uncomment database config under for server
 
-
-
 first just you need to do composer update then do php artisan migrate --seed
 create directory public/upload/media
-table users using engine myisam to use full text search
+
+then open your browser to path project
+
+===============================================================================
 
 in front list users has input for search in (name, email, phone) just write and enter
 
+table users using engine myisam to use full text search
 still working on this project to make it perfect
 
 1-restructure framework to work as modules mean that every module has its own (controllers, models, views, middlewars, migrations, service providers, routs).

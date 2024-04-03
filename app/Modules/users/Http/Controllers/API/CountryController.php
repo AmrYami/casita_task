@@ -10,8 +10,6 @@ use Users\Http\Requests\API\UpdateCountryRequest;
 use Users\Http\Resources\CountryResource;
 use Users\Services\CountryServiceShow;
 use Users\Services\CountryServiceStore;
-use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Http\RedirectResponse;
 
 class CountryController extends BaseController
 {
